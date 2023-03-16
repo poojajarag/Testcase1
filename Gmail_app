@@ -1,0 +1,42 @@
+Test Scenario: Login as user A  compaose a mail to user B check the mail in user B inbox and delete 3 mails in user sent items.															
+															
+															
+															
+															
+															
+HEADER															
+Testcase name	Gmail_compose_IT 01														
+Project name	- Gmail														
+Release name	 - Rel1.0														
+Requiredment no	 - SRS2.1.1														
+Module name	- Compose														
+Pre condition	Internet connection: yes														
+Test data	 -  create user A ac, create user B ac, 2mails should be presnt in sent items														
+Post condition	3 mail should b deleted in user A sent items														
+Severity	Critical														
+Test case type	 - Integration test case														
+Brief description - 	if user compose a mail and sent it and it should be rececvied by user B and user delete a mail iit should be deleted.														
+Execution hrs															
+															
+															
+BODY:															
+Step no	Action/Description	Input	Expected result	Actual result	Status	Comments									
+1	open the browser enter the URL	https://www.gmail.com	login page should be displayed												
+2	Login as user A by entering valid username and password 	user name: Tina password:tina124	Home page should be displayed												
+3	click on compose button	N/A	Compose page should be displayed 												
+4	Enter values for all the fields and clic on sent button	TO: CC: SUB:   BODY:	confirmation msg  should be displayed												
+5	Logout as user A	N/A	login page should be displayed												
+6	login as user B by entering valid user name and pwd 	user name: Mina password:mina123	Home page should be displayed												
+7	Clickon inbox button	N/A	inbox page should be displayed												
+8	Logout as user B	N/A	login page should be displayed												
+9	Login as user A by entering valid username and password 	user name: Tina password:tina124	Home page should be displayed												
+10	click on sent items button 	N/A	sent items page should be displayed												
+11	selecte 3 mails and delete it 	N/A	Succussfully 3 mails should be deleted												
+12	logout as user A	N/A	login page should be displayed												
+															
+															
+FOOTER															
+Author	POOJA														
+Reviewed By	TEST LEAD													
+Approved By	SCRUM MASTER													
+Approved Date	24/02/2023														
